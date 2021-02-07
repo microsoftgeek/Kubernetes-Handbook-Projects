@@ -18,8 +18,6 @@ spec:
           ports:
             - containerPort: 3000
           env:
-            - name: DB_CONNECTION
-              value: pg
             - name: DB_HOST
               value: postgres-cluster-ip-service
             - name: DB_PORT
@@ -29,4 +27,4 @@ spec:
             - name: DB_DATABASE
               value: notesdb
             - name: DB_PASSWORD
-              value: 63eaQB9wtLqmNBpg
+              value: secret

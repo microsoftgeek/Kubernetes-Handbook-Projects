@@ -18,7 +18,7 @@ spec:
             claimName: database-persistent-volume-claim
       containers:
         - name: postgres
-          image: fhsinchy/notes-postgres
+          image: postgres:12
           ports:
             - containerPort: 5432
           volumeMounts:
@@ -27,6 +27,6 @@ spec:
               subPath: postgres
           env:
             - name: POSTGRES_PASSWORD
-              value: 63eaQB9wtLqmNBpg
+              value: secret
             - name: POSTGRES_DB
               value: notesdb
